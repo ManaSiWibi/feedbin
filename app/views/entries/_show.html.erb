@@ -15,6 +15,7 @@
                 <% end %>
             </div>
             <div class="entry-buttons">
+                <%= render partial: "lightning/lightning", locals: {entry: entry} %>
                 <%= render partial: "entries/delete_button", locals: {entry: entry} %>
                 <%= render partial: "sharing_services/sharing_service_button" %>
                 <%= render partial: "entries/toggle_content", locals: {extract: extract, entry: entry} %>
